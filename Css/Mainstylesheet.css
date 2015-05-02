@@ -1,0 +1,92 @@
+
+html {
+	height: 100%;
+	background-color: black;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.lightbar {
+	width: 100%;
+	background-color: #0011FF;
+	height: 15px;
+	position: absolute;
+	z-index: 1;
+	box-shadow: 0px -10px 10px #0011FF,  0px 10px 100px #0011FF, 0px 5px 30px #0011FF, 0px 10px 80px #0011FF;
+
+	-webkit-animation: scan 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+
+	-moz-animation: scan 4s;
+	-moz-animation-iteration-count: infinite;
+
+	-ms-animation: scan 4s;
+	-ms-animation-iteration-count: infinite;
+
+	-o-animation: scan 4s;
+	-o-animation-iteration-count: infinite;
+
+	animation: scan 4s;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scan
+{
+	0%   { bottom: -5%; }
+	100% { bottom: 105%; }
+}
+
+@-moz-keyframes scan
+{
+	0%   { bottom: -5%; }
+	100% { bottom: 105%; }
+}
+
+@-ms-keyframes scan
+{
+	0%   { bottom: -5%; }
+	100% { bottom: 105%; }
+}
+
+@keyframes scan
+{
+	0%   { bottom: -5%; }
+	100% { bottom: 105%; }
+
+}
+
+.innerlightbar {
+	width: 100%;
+	position:relative;
+	height: 5px;
+	bottom: 5px;
+	background-color: white;
+	box-shadow: 0px 0px 5px white, 0px 0px 10px #B82BFF,  0px 0px 20px #B82BFF, 0px 0px 20px #B82BFF, 0px 0px 40px #B82BFF, 0px 0px 40px #B82BFF, 0px 0px 60px #B82BFF, 0px 0px 10px #CF70FF inset;
+}
+
+.circuitback {
+	height: 100%;
+	width: 100%;
+	background: url("circuitside.png") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	z-index: 2;
+  	position: absolute;
+	
+}
+
+.redsquare {
+	height: 300px;
+	width: 300px;
+	background-color: red;
+	position: relative;
+	top: -500px;
+	z-index: 2;
+}

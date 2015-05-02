@@ -1,0 +1,143 @@
+@font-face {
+	font-family: HelveticaNeue;
+	src: url("helvetica-neue1.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: imagine;
+	src: url("imagine.ttf") format("truetype");
+}
+
+html {
+	width: 100%;
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left bottom,
+		color-stop(0, #CBCBCB),
+		color-stop(1, #8C8C8C)
+		);
+	background-image: -o-linear-gradient(left, #CBCBCB 0%, #8C8C8C 100%);
+	background-image: -moz-linear-gradient(left, #CBCBCB 0%, #8C8C8C 100%);
+	background-image: -webkit-linear-gradient(left, #CBCBCB 0%, #8C8C8C 100%);
+	background-image: -ms-linear-gradient(left, #CBCBCB 0%, #8C8C8C 100%);
+	background-image: linear-gradient(to left, #CBCBCB 0%, #8C8C8C 100%);
+	
+	background-repeat: no-repeat;
+	background-color: #cbcbcb;
+}
+
+body {
+	width: 100%
+}
+
+.fullwrap {
+	height: 2000px;
+	width: 100%;
+	min-width: 1640px;
+}
+
+.midwrap {
+	position: relative;
+	height: 100%;
+	width: 1100px; 
+	background-color: transparent;
+	margin: auto;
+}
+
+.module {
+	position: relative;
+	height: 150px;
+	width: 1100px;
+	background-image: url(smallmodule.png);
+	box-shadow: 0px 0px 10px black;
+	margin-bottom: 20px;
+}
+
+.spacer {
+	position: relative;
+	height: 62px;
+	width: 1100px;
+}
+
+.title {
+	position: absolute;
+	background-color: transparent;
+	width: 632px;
+	height: 40px;
+	top: 14px;
+	left: 25px;
+
+	font-family: imagine, sans-serif;
+	font-size: 28px;
+	color: #00FFB7;
+	text-shadow: -2px 2px 2px black;
+}
+
+.player {
+	position: absolute;
+	background-color: transparent;
+	width: 617px;
+	height: 75px;
+	top: 60px;
+	left: 12px;
+}
+
+.info {
+	position: absolute;
+	background-color: transparent;
+	width: 442px;
+	height: 138px;
+	top: 6px;
+	left: 650px;
+
+	font-family: HelveticaNeue, sans-serif;
+	font-size: 14px;
+	color: #D6D6D6;
+	line-height: 110%;
+	text-shadow: 0px 0px 10px #737373;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.audioplayer {
+	position: relative;
+	top: 25px;
+	left: 25px;
+}
+
+.sidebar {
+	position: absolute;
+	background-image: url(sidebar.png);
+	height: 650px;
+	width: 250px;
+	box-shadow: 0px 0px 10px #4A4A4A, 2px 0px 1px black;
+	top: 99px;
+	left: -268px;
+}
+
+.banner {
+	position: relative;
+	height: 100px;
+	width: 800px;
+	background-color: transparent;
+	left: -265px;
+
+	font-family: imagine, sans-serif;
+	font-size: 14px;
+	color: #2E2E2E;
+	font-size: 100px;
+	text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #00FFB7,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    -2px 2px 5px #000;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.logo {
+	position: absolute;
+	top: 2px;
+}
